@@ -6,6 +6,9 @@ A flexible RabbitMQ client for publishing and consuming messages with customizab
 supporting both `publisher` and `consumer` modes; can be configured via CLI arguments and environment variables.
 You might find it useful for experimenting with RabbitMQ configurations or, at least, simple testing.
 
+
+[![Docker Hub](https://img.shields.io/docker/pulls/fouriermourier/py_rmq_client.svg)](https://hub.docker.com/r/fouriermourier/py_rmq_client)
+
 ---
 
 ## Table of Contents
