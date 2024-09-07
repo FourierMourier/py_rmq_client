@@ -1,0 +1,13 @@
+.idea/*
+.vscode/*
+
+.ruff_cache
+.mypy_cache
+
+**/*.env
+!.env.example
+
+tmp/*
+tools/*
+
+local/*

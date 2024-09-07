@@ -1,0 +1,27 @@
+services:
+  publisher:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    entrypoint:
+      - rmq
+      - --mode=publisher
+      - --message="hello there"
+      - --delay=1.0
+      - --log-level=warning
+      - --verbose=True
+
+  consumer:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    entrypoint:
+      - rmq
+      - --mode=consumer
+      - --delay=0.5
+      - --log-level=warning
+      - --verbose=True

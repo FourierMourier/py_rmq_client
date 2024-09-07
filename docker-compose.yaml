@@ -1,0 +1,23 @@
+services:
+  publisher:
+    image: fouriermourier/py_rmq_client:latest
+    env_file:
+      - .env
+    entrypoint:
+      - rmq
+      - --mode=publisher
+      - --message="hello there"
+      - --delay=1.0
+      - --log-level=warning
+      - --verbose=True
+
+  consumer:
+    image: fouriermourier/py_rmq_client:latest
+    env_file:
+      - .env
+    entrypoint:
+      - rmq
+      - --mode=consumer
+      - --delay=0.5
+      - --log-level=warning
+      - --verbose=True
