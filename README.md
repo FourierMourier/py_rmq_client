@@ -1,5 +1,3 @@
-### README.md
-
 # Python RabbitMQ Publisher/Consumer client
 
 A flexible RabbitMQ client for publishing and consuming messages with customizable flow, 
